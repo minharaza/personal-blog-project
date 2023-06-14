@@ -6,10 +6,10 @@ My goal with this project is to learn about front end and UX/UI! Here's my attem
 I am also attempting to walk myself through the UX/UI design process, as if I was working on a real industry site. 
 
 ## Some other goals for myself:
-*Learn UX/UI design concepts and *attempt to implement them into this website
-*Create my own art for the website - I'm trying to work on my design skills alongside my computer science skills!
-*Better understand HTML and front end development
-*Don't give up!
+* Learn UX/UI design concepts and *attempt* to implement them into this website
+* Create my own art for the website - I'm trying to work on my design skills alongside my computer science skills!
+* Better understand HTML and front end development
+* Don't give up!
 * And most importantly - Have fun learning! <3
 
 ## Preliminary Ideas
