@@ -12,17 +12,36 @@
     <div class="container">
 
         <!--contact form-->
-        <form (ngSubmit)="submitForm()">
+        <form (ngSubmit)="submitForm()" #contactForm="ngForm">
             <!--name-->
             <div class="field">
                 <label class="label">Name</label>
-                <input type="text " name="name" class="input is-rounded" [(ngModel)]="name">
+                <input type="text " 
+                name="name" 
+                class="input is-rounded" 
+                [(ngModel)]="name" 
+                #nameInput="ngModel" 
+                required>
+
+                <div class ="help is-error" *ngIf="nameInput.invalid && nameInput.touched">
+                    Your name is required.
+                </div>
             </div>
 
             <!--email-->
             <div class="field">
                 <label class="label">Email</label>
-                <input type="email" name="email" class="input is-rounded" [(ngModel)]="email">
+                <input type="email" 
+                name="email" 
+                class="input is-rounded" 
+                [(ngModel)]="email" 
+                #emailInput="ngModel"
+                required 
+                email>
+
+                <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">
+                    Your email is required and must be a valid email.
+                </div>
             </div>
 
             <!--message-->
@@ -32,7 +51,10 @@
             </div>
 
             <!--submit button-->
-            <button type="submit" class="button is-danger is-light is-large is-responsive">
+            <button 
+            type="submit" 
+            class="button is-danger is-light is-large is-responsive"
+            [disabled]="contactForm.invalid">
                 Send!
             </button>
         </form>
