@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+
+}
+
+.carousel-cell{
+    width: 40%;
+    height: 550px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-cell:before{
+    display: block;
+    content: '';
+}
