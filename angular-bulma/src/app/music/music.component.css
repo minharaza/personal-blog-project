@@ -1,7 +1,10 @@
 *{
     box-sizing: border-box;
-
 }
+
+.carousel {
+    background: #EEE;
+  }
 
 .carousel-cell{
     width: 40%;
