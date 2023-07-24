@@ -15,10 +15,6 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
-    path: 'users',
-    loadChildren: () => import('src/app/users/users.module').then(m => m.UsersModule)
-  },
-  {
     path: 'music',
     component: MusicComponent
 
